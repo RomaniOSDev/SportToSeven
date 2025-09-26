@@ -12,7 +12,9 @@ struct WorkoutView: View {
             VStack(spacing: 20) {
                 header
                 progress
+                Spacer()
                 exerciseCard
+                Spacer()
                 controls
             }
             .padding()

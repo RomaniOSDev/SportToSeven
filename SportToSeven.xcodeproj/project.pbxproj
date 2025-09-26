@@ -12,9 +12,6 @@
 		741DD88B2E78143200331031 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 741DD88A2E78143200331031 /* OneSignalInAppMessages */; };
 		741DD88D2E78143200331031 /* OneSignalLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 741DD88C2E78143200331031 /* OneSignalLocation */; };
 		741DD8902E78144A00331031 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 741DD88F2E78144A00331031 /* AppsFlyerLib */; };
-		741DD8962E78786800331031 /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741DD8932E78786800331031 /* InternetViewController.swift */; };
-		741DD8972E78786800331031 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741DD8942E78786800331031 /* LoaderViewController.swift */; };
-		741DD8982E78786800331031 /* CheckLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741DD8922E78786800331031 /* CheckLink.swift */; };
 		748F513E2E6ED1CE0003E143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748F51352E6ED1CE0003E143 /* Assets.xcassets */; };
 		748F51402E6ED1CE0003E143 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748F51382E6ED1CE0003E143 /* LaunchScreen.storyboard */; };
 		748F51412E6ED1CE0003E143 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748F513A2E6ED1CE0003E143 /* Main.storyboard */; };
@@ -41,9 +38,6 @@
 /* Begin PBXFileReference section */
 		0DB673D0424CFEF250326238 /* Pods-SportToSeven.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportToSeven.release.xcconfig"; path = "Target Support Files/Pods-SportToSeven/Pods-SportToSeven.release.xcconfig"; sourceTree = "<group>"; };
 		741DD8912E7815CB00331031 /* SportToSeven.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SportToSeven.entitlements; sourceTree = "<group>"; };
-		741DD8922E78786800331031 /* CheckLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLink.swift; sourceTree = "<group>"; };
-		741DD8932E78786800331031 /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
-		741DD8942E78786800331031 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
 		748F511C2E6ED1B00003E143 /* SportToSeven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportToSeven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		748F51342E6ED1CE0003E143 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		748F51352E6ED1CE0003E143 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,16 +89,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		741DD8952E78786800331031 /* LoadingView */ = {
-			isa = PBXGroup;
-			children = (
-				741DD8922E78786800331031 /* CheckLink.swift */,
-				741DD8932E78786800331031 /* InternetViewController.swift */,
-				741DD8942E78786800331031 /* LoaderViewController.swift */,
-			);
-			path = LoadingView;
-			sourceTree = "<group>";
-		};
 		748F51132E6ED1B00003E143 = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +136,6 @@
 				748F515C2E6ED93B0003E143 /* CustomWorkoutsListView.swift */,
 				748F515D2E6ED93B0003E143 /* ExercisePickerView.swift */,
 				748F51652E6F1E440003E143 /* SettingsView.swift */,
-				741DD8952E78786800331031 /* LoadingView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -306,9 +289,6 @@
 				748F51432E6ED1CE0003E143 /* SceneDelegate.swift in Sources */,
 				748F515E2E6ED93B0003E143 /* CustomWorkoutsListView.swift in Sources */,
 				748F515F2E6ED93B0003E143 /* CustomWorkoutEditorView.swift in Sources */,
-				741DD8962E78786800331031 /* InternetViewController.swift in Sources */,
-				741DD8972E78786800331031 /* LoaderViewController.swift in Sources */,
-				741DD8982E78786800331031 /* CheckLink.swift in Sources */,
 				748F51682E6F1FC10003E143 /* CustomComponents.swift in Sources */,
 				748F51642E6ED9680003E143 /* CustomWorkoutViewModel.swift in Sources */,
 				748F51602E6ED93B0003E143 /* ExercisePickerView.swift in Sources */,
@@ -364,7 +344,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jac.sp0rtt0s3v3n;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -399,7 +379,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jac.sp0rtt0s3v3n;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
