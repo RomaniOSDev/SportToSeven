@@ -1,3 +1,10 @@
+//
+//  CustomWorkoutsListView.swift
+//  SportToSeven
+//
+//  Created by Jack Reess on 08.09.2025.
+//
+
 import SwiftUI
 
 struct CustomWorkoutsListView: View {

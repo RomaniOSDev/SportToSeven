@@ -1,3 +1,10 @@
+//
+//  SettingsView.swift
+//  SportToSeven
+//
+//  Created by Jack Reess on 08.09.2025.
+//
+
 import SwiftUI
 import StoreKit
 

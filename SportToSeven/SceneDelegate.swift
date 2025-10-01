@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  SportToSeven
 //
-//  Created by Роман Главацкий on 08.09.2025.
+//  Created by Jack Reess on 08.09.2025.
 //
 
 import UIKit
@@ -16,8 +16,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else {return}
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = UIHostingController(rootView: ContentView())
+        
+        let controller: UIViewController
+            controller = LoadingSplash()
+        window?.rootViewController = controller
         window?.makeKeyAndVisible()
+
+        for context in connectionOptions.urlContexts {
+            AppsFlyerLib.shared().handleOpen(context.url, options: nil)
+        }
 
     }
 

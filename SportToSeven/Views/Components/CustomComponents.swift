@@ -1,11 +1,12 @@
+//
+//  CustomComponents.swift
+//  SportToSeven
+//
+//  Created by Jack Reess on 08.09.2025.
+//
+
 import SwiftUI
 
-// MARK: - App Colors
-//extension Color {
-//    static let main = Color("main")
-//    static let secondCLR = Color("second")
-//    static let appWhite = Color.white
-//}
 
 // MARK: - Custom Button Styles
 struct PrimaryButtonStyle: ButtonStyle {

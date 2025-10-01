@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  SportToSeven
 //
-//  Created by Роман Главацкий on 08.09.2025.
+//  Created by Jack Reess on 08.09.2025.
 //
 
 import SwiftUI
