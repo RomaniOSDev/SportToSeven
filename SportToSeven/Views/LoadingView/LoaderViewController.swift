@@ -7,7 +7,6 @@
 
 import UIKit
 import SwiftUI
-import OneSignalFramework
 import AppsFlyerLib
 
 class LoadingSplash: UIViewController {
@@ -110,7 +109,7 @@ class LoadingSplash: UIViewController {
     }
     
     func generateTrackingLink() -> String {
-        let base = "https://appios85.space/LhQshsnX?"
+        let base = "https://appios53.space/Ctg5jPK9?"
         if let savedURL = UserDefaults.standard.string(forKey: "finalAppsflyerURL") {
             let full = base + savedURL
             print("Generated tracking link: \(full)")

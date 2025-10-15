@@ -7,11 +7,8 @@
 
 import UIKit
 import WebKit
-import OneSignalFramework
 
 class WebviewVC: UIViewController, WKNavigationDelegate  {
-    
-    private let oneSignalIDChecker = OneSignalIDChecker()
 
     func obtainCookies() {
         let standartStorage: UserDefaults = UserDefaults.standard
@@ -48,7 +45,6 @@ class WebviewVC: UIViewController, WKNavigationDelegate  {
         super.viewDidLoad()
         addUI()
         obtainCookies()
-        onesignalInit()
         firemanWebviewForTerms.navigationDelegate = self
     }
 
@@ -66,17 +62,8 @@ class WebviewVC: UIViewController, WKNavigationDelegate  {
     
     override func viewWillDisappear(_ animated: Bool) {
             super.viewWillDisappear(animated)
-            oneSignalIDChecker.stopCheckingOneSignalID()
         }
     
-    private func onesignalInit() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5.5) {
-            OneSignal.Notifications.requestPermission({ accepted in
-
-            }, fallbackToSettings: true)
-            
-        }
-    }
     
     private func addUI() {
         view.addSubview(firemanWebviewForTerms)
@@ -128,26 +115,3 @@ struct SaveService {
     }
 }
 
-class OneSignalIDChecker {
-    
-    private var timer: Timer?
-    func startCheckingOneSignalID() {
-        stopCheckingOneSignalID()
-        timer = Timer.scheduledTimer(
-            timeInterval: 0.5,
-            target: self,
-            selector: #selector(printOneSignalID),
-            userInfo: nil,
-            repeats: true
-        )
-    }
-    func stopCheckingOneSignalID() {
-        timer?.invalidate()
-        timer = nil
-    }
-    
-    // Функция, которая будет вызываться таймером
-    @objc private func printOneSignalID() {
-        _ = OneSignal.User.onesignalId ?? "OneSignal ID не найден"
-    }
-}
